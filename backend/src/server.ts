@@ -34,12 +34,17 @@ app.post("/send-message", async (req, res) => {
     });
     res.status(200).json({ success: true, info });
   } catch (err) {
+    console.error("Email Error:", err);
     res.status(500).json({ success: false, err });
   }
 });
 
-const port = process.env.PORT || 5000;
+if (process.env.NODE_ENV === "development") {
+  const port = process.env.PORT;
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+  app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+  });
+}
+
+export default app;
