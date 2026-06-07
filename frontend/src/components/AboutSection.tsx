@@ -2,6 +2,7 @@ import { LuDownload, LuCode, LuArrowUpRight, LuAward, LuGlobe, LuExternalLink } 
 import SectionHeading from "./SectionHeading.tsx";
 import projects from "../data/projects.ts";
 import certificates from "../data/certificates.ts";
+import socials from "../data/socials.ts";
 
 type NavbarProps = {
   scrollToId: (id: string) => void;
@@ -29,7 +30,7 @@ const AboutSection = ({scrollToId}: NavbarProps) => {
           </button>
 
           <a
-            href="https://drive.google.com/file/d/1gCEEULSWp7hVe70KH7m_IkQzKjB1tK0Y/view"
+            href={socials.Resume}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 gradient-primary text-primary-foreground px-7 py-3 rounded-xl font-medium transition-smooth hover:opacity-90 glow-sm"
