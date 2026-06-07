@@ -1,4 +1,4 @@
-const emailTemplate = (fullName: string, email: string, message: string) => {
+const emailTemplate = (fullName, email, message) => {
     return `
         <div style=" background:#0b0b1a; padding:40px 20px; font-family:Arial,sans-serif; color:#ffffff; "> 
             <div style=" max-width:650px; margin:auto; background:#111122; border:1px solid rgba(168,85,247,0.18); border-radius:22px; overflow:hidden; box-shadow:0 0 30px rgba(168,85,247,0.08); ">

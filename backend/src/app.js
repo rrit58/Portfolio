@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
-import emailTemplate from "./emailTemplate.ts";
+import emailTemplate from "./emailTemplate.js";
 dotenv.config();
 
 const app = express();
